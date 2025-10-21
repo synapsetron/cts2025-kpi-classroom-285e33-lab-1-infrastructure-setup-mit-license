@@ -1,12 +1,17 @@
 1. **Set-up account.** Register in a cloud provider. Now you have a root account. **(1 point)**  
    Now perform one of the following (you need to select only one action):  
-   a. Create an IaM user and attach FullAdmin policy. Use it for all future interactions with the system. **(1 point)**  
-   b. Create an IaM Identity center account (or analog for your cloud provider). Also make it full admin. **(2 points)**  
+   a. Create an IaM user and attach FullAdmin policy. Use it for all future interactions with the system. **(1 point)**
 
+   We can the the result of creation on IAM User at the screenshots below
+   ![UserCreation1.1](PNG/CreatedUser1.1.png)
+
+   And more detailed information of  user here:
+   ![UserCreation1.2](PNG/CreatedUser1.2.png)
+---
 2. *(Optional)* Create an Organisation  
    [docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html)  
    and user for it. All next labs are to be performed within it. **(2 points)**  
-
+---
 3. Create one more user. Create an IaM policy that allows **ONLY** to view resources (no write access). **(1 point)**  
 
 4. Create a Role that has this policy attached and can be assumed by user from p3. **(1 point)**  
