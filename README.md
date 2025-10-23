@@ -74,7 +74,22 @@
   
    
 ---
-7. *(Optional)* Create IaC stack holding your network resources. **(2 points)**  
+7. *(Optional)* Create IaC stack holding your network resources. **(2 points)**
+
+   Lets create IaC stack to hold my network resourses. Firstly, scan resourses:
+   ![IACGenerator](PNG/IACGenerator.png)
+
+   Now, add scaned resources that we want to see in the template:
+   ![IACResoursesCompleted](PNG/IACResoursesCompleted.png)
+   ![IACaddScaned1](PNG/IACaddScaned1.png)
+   ![IACaddScaned2](PNG/IACaddScaned2.png)
+
+   After that we can see created IaC template:
+   ![IACTemplateGenerated](PNG/IACTemplateGenerated.png)
+
+   Here we can see it in code:
+   
+   ![IACcodeTemplate.png](PNG/IACcodeTemplate.png)
 ---
 8. Calculate monthly budget for lab 2, assuming there will be only 2 shards. **(2 points)**
 ---
