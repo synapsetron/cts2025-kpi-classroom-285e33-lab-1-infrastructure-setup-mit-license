@@ -55,7 +55,24 @@
    ![StackCreatedRoleAndAssumePolicies](PNG/StackCreatedRoleAndAssumePolicies.png)
 ---
 6. Create a network (VPC for your resources). There should be private and public subnets.  
-   Public one has IGW, private ones are for internal access only. **(3 points)**  
+   Public one has IGW, private ones are for internal access only. **(3 points)** 
+
+   We can see created VPC in the screenshot below:
+   ![CreatedVPC](PNG/CreatedVPC.png)
+
+   Lets create public and private subnets:
+   ![PublicSubnet](PNG/PublicSubnet.png)
+   
+   ![PrivateSubnet](PNG/PrivateSubnet.png)
+
+   Create internet gateway:
+    ![CreatedInternetGateway](PNG/CreatedInternetGateway.png)
+
+   Create public route table and connect it to IG. Also create private RouteTable:
+    ![publicRouteTable](PNG/publicRouteTable.png)
+    ![privateRouteTable](PNG/privateRouteTable.png)
+  
+   
 ---
 7. *(Optional)* Create IaC stack holding your network resources. **(2 points)**  
 ---
