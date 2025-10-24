@@ -92,4 +92,38 @@
    ![IACcodeTemplate.png](PNG/IACcodeTemplate.png)
 ---
 8. Calculate monthly budget for lab 2, assuming there will be only 2 shards. **(2 points)**
+
+1) EC2 (3 × t2.micro)
+0.0134 $/год × 730 h × 3 = $29.35/month. 
+
+2) EBS gp3 ( 60 GB)
+60 GB × 0.119 $/GB-міс = $7.14/month. 
+
+3) ALB (1 instance, ~1 LCU)
+(0.0225 + 0.008) $/h × 730 = $22.27/month. 
+
+4) NAT Gateway (1 шт.)
+0.045 $/h × 730 = $32.85/month. 
+
+
+Data processing via NAT (for example 10 GB/month for update): 10 × 0.045 = $0.45/h. 
+
+5) Data transfer out (ex. ~50 GB/month)
+Keep it free until < 100 GB ⇒ $0. 
+
+6) Cloudwatch, logs, snapshots
+For example $1.50/month
+
+Result (t2.micro)
+
+EC2: $29.35
+EBS: $7.14
+ALB: $22.27
+NAT GW (h): $32.85
+NAT data processing (~10 GB): $0.45
+Other: $1.50
+
+Sum ≈ $93.6/month
+
+If NAT traffic is higher, add $0.045/GB; if Internet access >100 GB/month, add the regional data access rate.
 ---
